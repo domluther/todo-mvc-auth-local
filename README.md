@@ -54,3 +54,6 @@ Have fun testing and improving it! 😎
 9. Updated express-session
 10. Updated passport
 11. Updated validator
+12. Removed mongodb - not actually used
+13. Updated to mongoose 6 (incremental update to make it easier to debug)
+    1. Updated database.js. useFindAndModify & useCreateIndex were removed as options.
