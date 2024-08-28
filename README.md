@@ -47,4 +47,5 @@ Have fun testing and improving it! 😎
 2. Removed nodemon from package.json
 3. Changed the repo to start with node --watch instead of nodemon.
 4. Updated bcrypt, tested creating and signing in. OK.
-5.
+5. Removed dotenv from package.json and server.js
+6. Changed the script to start as "start": "node --watch --env-file=./config/.env server.js",
