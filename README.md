@@ -52,3 +52,5 @@ Have fun testing and improving it! 😎
 7. Changed the script to start as "start": "node --watch --env-file=./config/.env server.js",
 8. Updated express
 9. Updated express-session
+10. Updated passport
+11. Updated validator

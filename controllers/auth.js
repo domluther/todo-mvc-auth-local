@@ -75,7 +75,7 @@ exports.postSignup = (req, res, next) => {
     })
   if (req.body.password !== req.body.confirmPassword)
     validationErrors.push({ msg: 'Passwords do not match' })
-
+  console.log(validationErrors)
   if (validationErrors.length) {
     req.flash('errors', validationErrors)
     return res.redirect('../signup')
