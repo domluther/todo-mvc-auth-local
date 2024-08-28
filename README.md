@@ -57,3 +57,7 @@ Have fun testing and improving it! 😎
 12. Removed mongodb - not actually used
 13. Updated to mongoose 6 (incremental update to make it easier to debug)
     1. Updated database.js. useFindAndModify & useCreateIndex were removed as options.
+14. Updated to connect-mongo 4
+    1. Don't call (session) on import
+    2. Changed option from mongoConnection to mongoUrl as needed in mongo 4
+    3. Fixed logout method in controllers/auth.js -

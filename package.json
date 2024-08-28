@@ -5,6 +5,7 @@
   "main": "server.js",
   "scripts": {
     "start": "node --watch --env-file=./config/.env server.js",
+    "dev": "node --inspect --watch --env-file=./config/.env server.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "format": "prettier --write ."
   },
@@ -12,7 +13,7 @@
   "license": "MIT",
   "dependencies": {
     "bcrypt": "^5.1.1",
-    "connect-mongo": "^3.2.0",
+    "connect-mongo": "^4.6.0",
     "ejs": "^3.1.10",
     "express": "^4.19.2",
     "express-flash": "^0.0.2",
