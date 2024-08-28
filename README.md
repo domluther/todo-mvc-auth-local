@@ -66,3 +66,5 @@ Have fun testing and improving it! 😎
     1. Updated deserializeUser in passport.js to use async/await
     2. Updated localStrategy findOne in passport.js to use async/await
     3. Updated controllers/auth.js postSignup findOne and save to use async/await
+17. Updated to mongoose 8
+    1. Removed newUrlParser and unifiedTopology options (deprecated) from database.js
