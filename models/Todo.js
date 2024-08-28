@@ -1,4 +1,4 @@
-const mongoose = require('mongoose')
+const mongoose = require('mongoose');
 
 const TodoSchema = new mongoose.Schema({
   todo: {
@@ -9,10 +9,11 @@ const TodoSchema = new mongoose.Schema({
     type: Boolean,
     required: true,
   },
+  // This is so you know who owns the todo
   userId: {
     type: String,
-    required: true
-  }
-})
+    required: true,
+  },
+});
 
-module.exports = mongoose.model('Todo', TodoSchema)
+module.exports = mongoose.model('Todo', TodoSchema);

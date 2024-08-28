@@ -2,11 +2,16 @@ const express = require('express');
 const app = express();
 const mongoose = require('mongoose');
 const passport = require('passport');
+// middleware to create sessions for authentication
 const session = require('express-session');
-
+//storage session is in DB that is used for  passport
 const MongoStore = require('connect-mongo');
+// Used to display messages on screen during render
 const flash = require('express-flash');
+// Used for logging
 const logger = require('morgan');
+
+// Our files
 const connectDB = require('./config/database');
 const mainRoutes = require('./routes/main');
 const todoRoutes = require('./routes/todos');
