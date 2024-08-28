@@ -4,7 +4,7 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "start": "node --watch server.js",
+    "start": "node --watch --env-file=./config/.env server.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "format": "prettier --write ."
   },
@@ -13,7 +13,6 @@
   "dependencies": {
     "bcrypt": "^5.1.1",
     "connect-mongo": "^3.2.0",
-    "dotenv": "^8.2.0",
     "ejs": "^3.1.10",
     "express": "^4.17.1",
     "express-flash": "^0.0.2",
