@@ -61,3 +61,8 @@ Have fun testing and improving it! 😎
     1. Don't call (session) on import
     2. Changed option from mongoConnection to mongoUrl as needed in mongo 4
     3. Fixed logout method in controllers/auth.js -
+15. Updated to connect-mongo 5 - no changes needed
+16. Updated to mongoose 7 - promises/async needed instead of callbacks for eg findById()
+    1. Updated deserializeUser in passport.js to use async/await
+    2. Updated localStrategy findOne in passport.js to use async/await
+    3. Updated controllers/auth.js postSignup findOne and save to use async/await
