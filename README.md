@@ -40,3 +40,11 @@ bcrypt, connect-mongo, dotenv, ejs, express, express-flash, express-session, mon
   ***
 
 Have fun testing and improving it! 😎
+
+# Changes
+
+1. Removed the .env file from the repo and added it to gitignore because I didn't want to share mine.
+2. Removed nodemon from package.json
+3. Changed the repo to start with node --watch instead of nodemon.
+4. Updated bcrypt, tested creating and signing in. OK.
+5.
