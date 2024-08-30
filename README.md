@@ -40,31 +40,3 @@ bcrypt, connect-mongo, ejs, express, express-flash, express-session, mongodb, mo
   ***
 
 Have fun testing and improving it! 😎
-
-# Changes
-
-1. Removed the .env file from the repo and added it to gitignore because I didn't want to share mine.
-2. Removed nodemon from package.json
-3. Changed the repo to start with node --watch instead of nodemon.
-4. Updated bcrypt, tested creating and signing in. OK.
-5. Updated ejs
-6. Removed dotenv from package.json and server.js
-7. Changed the script to start as "start": "node --watch --env-file=./config/.env server.js",
-8. Updated express
-9. Updated express-session
-10. Updated passport
-11. Updated validator
-12. Removed mongodb - not actually used
-13. Updated to mongoose 6 (incremental update to make it easier to debug)
-    1. Updated database.js. useFindAndModify & useCreateIndex were removed as options.
-14. Updated to connect-mongo 4
-    1. Don't call (session) on import
-    2. Changed option from mongoConnection to mongoUrl as needed in mongo 4
-    3. Fixed logout method in controllers/auth.js -
-15. Updated to connect-mongo 5 - no changes needed
-16. Updated to mongoose 7 - promises/async needed instead of callbacks for eg findById()
-    1. Updated deserializeUser in passport.js to use async/await
-    2. Updated localStrategy findOne in passport.js to use async/await
-    3. Updated controllers/auth.js postSignup findOne and save to use async/await
-17. Updated to mongoose 8
-    1. Removed newUrlParser and unifiedTopology options (deprecated) from database.js
