@@ -109,6 +109,10 @@ exports.postSignup = async (req, res, next) => {
       if (err) {
         return next(err)
       }
+      req.flash('success', {
+        msg: 'Successfully signed up!'
+      })
+
       res.redirect('/todos')
     })
   } catch (error) {
